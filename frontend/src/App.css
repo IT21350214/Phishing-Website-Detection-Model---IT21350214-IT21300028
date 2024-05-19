@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  background-image: url("../public/images/bg.avif");
+  /* background-image: url("../public/images/matrix-hacker-background.jpg"); */
+  /* background-image: url("../public/images/Cyber-Security-PNG-Clipart.png"); */
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.recenturl-container {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Black background with 50% transparency */
+  padding: 10px; /* Add some padding if needed */
+  border-radius: 5px; /* Optional: rounded corners */
+  width: 90vw;
+  border: #727272 solid;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px #4b4b4b;
+  transition: transform 0.3s ease;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.recenturl-container:hover {
+  transform: scale(1.1); /* Scale the div by 10% when hovered */
+}
+
+.danger-icon {
+  color: red; /* Color of the danger icon */
+  margin-left: 10px; /* Spacing between the text and the icon */
+}
+
+.correct-icon {
+  color: green; /* Color of the checkmark icon */
+  margin-left: 10px; /* Spacing between the text and the icon */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.btn-check {
+  background-color: rgb(14, 14, 84); /* Blue background color */
+  color: white; /* White text color */
+  width: 10vw; /* 10% of the viewport width */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  border-radius: 5px; /* Optional: rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn-check:hover {
+  background-color: rgb(119, 119, 119); /* Darker blue on hover */
+  color: rgb(14, 14, 84);
+}
+
+.input-url {
+  width: 70vw; /* 70% of the viewport width */
+  background-color: #f0f0f0; /* Whitish gray background color */
+  color: black; /* White text color */
+  border: none; /* Remove default border */
+  padding: 10px; /* Add some padding */
+  border-radius: 5px; /* Optional: rounded corners */
+  font-size: 16px; /* Set font size */
+  margin-bottom: 20px;
+}
+
+.input-url::placeholder {
+  color: #ccc; /* Light gray placeholder text color */
+}
+
+.heading {
+  font-family: "Google Sans", sans-serif; /* Use Google Sans font */
+  font-size: 3rem; /* Make the font size large */
+  font-weight: 700; /* Bold font weight */
+  text-align: center; /* Center align the text */
+  margin: 20px 0; /* Add some margin */
+}
