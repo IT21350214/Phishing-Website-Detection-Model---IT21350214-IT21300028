@@ -23,13 +23,13 @@ exports.addUrl = async (req, res) => {
       mode: 'text',
       // pythonPath: "C:/Python312/python.exe", // Uncomment and set the correct Python path if needed
       pythonOptions: ['-u'],
-      scriptPath: 'C:\\Users\\famnu\\OneDrive\\Desktop\\pishing\\Backend', // Ensure this is the correct script path
+      scriptPath: 'C://Users//famnu//OneDrive//Documents//GitHub//Pishing-Website-URL//backend', // Ensure this is the correct script path
     };
 
     console.log("PythonShell options:", options);
 
     // Run the Python script with the specified options
-    let pyshell = new PythonShell('python.py', options);
+    let pyshell = new PythonShell('python.py', options); // Correct script name
 
     // Send the URL to the Python script via stdin
     pyshell.send(urlLink);
